@@ -1,7 +1,9 @@
 backend:
   name: github
   base_url: https://suresh-issue-82.dcycleproject.org
-  auth_endpoint: /auth/github/repo/69307fc965350db3986940c2
+  auth_endpoint: /auth/github/repo/693082a791b70bcda9a06a6f
+  repo: snamyorg1/test1
+  branch: main
 media_folder: static/uploads
 public_folder: /uploads
 collections:
