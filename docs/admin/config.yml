@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: snamyorg1/test1
+  base_url: https://suresh-issue-82.dcycleproject.org
+  auth_endpoint: /auth/github/repo/6953b584cb2ded2352d1539d
+media_folder: static/uploads
+public_folder: /uploads
+collections:
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Date
+        name: date
+        widget: datetime
+      - label: Body
+        name: body
+        widget: markdown
