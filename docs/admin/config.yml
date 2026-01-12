@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: snamyorg1/test1
+  base_url: https://app.staticauth.com
+  auth_endpoint: /auth/github/repo/696529c28a3239f20471722e
+media_folder: static/uploads
+public_folder: /uploads
+collections:
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Date
+        name: date
+        widget: datetime
+      - label: Body
+        name: body
+        widget: markdown
