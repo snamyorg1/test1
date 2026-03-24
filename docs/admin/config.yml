@@ -155,7 +155,7 @@ collections:
         name: "awards_list"
         fields:
           - label: "Awards"
-            name: ""
+            name: "items"
             widget: "list"
             fields:
               - label: "Name"
