@@ -147,6 +147,7 @@ collections:
   #       widget: 'markdown'
   #       required: false
   - name: "awards"
+    create: true  
     label: "Awards"
     files:
       - file: "docs/_data/awards.yml"
