@@ -147,12 +147,12 @@ collections:
   #       widget: 'markdown'
   #       required: false
   - name: "awards"
-    create: true  
     label: "Awards"
     files:
       - file: "docs/_data/awards.yml"
         label: "Awards List"
         name: "awards_list"
+        create: true 
         fields:
           - label: "Awards"
             name: "items"
