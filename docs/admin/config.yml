@@ -232,7 +232,7 @@ collections:
                 
 
 
-  - name: "awards"
+    - name: "awards"
     label: "Awards"
     files:
       - file: "docs/_data/awards.yml"
@@ -243,33 +243,21 @@ collections:
             name: "items"
             widget: "list"
             fields:
-              - name: "awards"
-                label: "Awards"
-                files:
-                  - file: "docs/_data/awards.yml"
-                    label: "Awards List"
-                    name: "awards_list"
+              - label: "Name"
+                name: "name"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "French", name: "fr", widget: "string" }
+              - label: "Media"
+                name: "media"
+                widget: "object"
+                fields:
+                  - { label: "Image", name: "path", widget: "image" }
+
+                  - label: "Alt Text"
+                    name: "alt"
+                    widget: "object"
                     fields:
-                      - label: "Awards"
-                        name: ""
-                        widget: "list"
-                        fields:
-                          - label: "Name"
-                            name: "name"
-                            widget: "object"
-                            fields:
-                              - { label: "English", name: "en", widget: "string" }
-                              - { label: "French", name: "fr", widget: "string" }
-
-                          - label: "Media"
-                            name: "media"
-                            widget: "object"
-                            fields:
-                              - { label: "Image", name: "path", widget: "image" }
-
-                              - label: "Alt Text"
-                                name: "alt"
-                                widget: "object"
-                                fields:
-                                  - { label: "English", name: "en", widget: "string" }
-                                  - { label: "French", name: "fr", widget: "string" }
+                      - { label: "English", name: "en", widget: "string" }
+                      - { label: "French", name: "fr", widget: "string" }
