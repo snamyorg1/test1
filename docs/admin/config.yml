@@ -181,15 +181,15 @@ collections:
 #                     - { label: "French", name: "fr", widget: "string" }
 
 
-  - name: "blog"
-    label: "Blog"
-    folder: "_posts"
-    create: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
+  # - name: "blog"
+  #   label: "Blog"
+  #   folder: "_posts"
+  #   create: true
+  #   fields:
+  #     - { label: "Title", name: "title", widget: "string" }
+  #     - { label: "Date", name: "date", widget: "datetime" }
+  #     - { label: "Featured Image", name: "image", widget: "image" }
+  #     - { label: "Body", name: "body", widget: "markdown" }
 
   # - name: "awards"
   #   label: "Awards"
