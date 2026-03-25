@@ -5,4 +5,4 @@ image: /media/awma2e9c.jpg
 ---
 dafadsfasdfasdfasdf
 
-![klk](/media/clean50_2019_header_logo7156.png "jkjkjk")
+![klk](/media/awma2e9c.jpg "jkjkjk")
