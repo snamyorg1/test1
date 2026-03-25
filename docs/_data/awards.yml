@@ -1,5 +1,5 @@
 items:
-  - image: /media/awards_energia.png
+  - image: /media/energia5758.png
     name:
       en: Energia
       fr: Energia
@@ -11,3 +11,5 @@ items:
       alt:
         en: Energia
         fr: Energia
+    path: /media/awma2e9c.jpg
+    preview: /media/mercuriadese4e3.jpg
