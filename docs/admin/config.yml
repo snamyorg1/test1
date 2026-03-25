@@ -180,42 +180,52 @@ collections:
 #                     - { label: "French", name: "fr", widget: "string" }
 
 
-- name: "awards"
-  label: "Awards"
-  files:
-    - file: "docs/_data/awards.yml"
-      label: "Awards List"
-      name: "awards_list"
-      fields:
-        - label: "Awards"
-          name: "items"
-          widget: "list"
-          summary: "{{fields.name.en}}"
-          fields:
-            - label: "Image"
-              name: "image"
-              widget: "image"
+  - name: "blog"
+    label: "Blog"
+    folder: "_posts"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
 
-            - label: "Name"
-              name: "name"
-              widget: "object"
-              fields:
-                - { label: "English", name: "en", widget: "string" }
-                - { label: "French", name: "fr", widget: "string" }
-
-            - label: "Alt Text"
-              name: "alt"
-              widget: "object"
-              fields:
-                - { label: "English", name: "en", widget: "string" }
-                - { label: "French", name: "fr", widget: "string" }
-                            
-            - label: "Image"
-              name: "path"
-              widget: "image"
-            
-            - label: "Preview"
-              name: "preview"
-              widget: "image"
-              required: false
+  - name: "awards"
+    label: "Awards"
+    files:
+      - file: "docs/_data/awards.yml"
+        label: "Awards List"
+        name: "awards_list"
+        fields:
+          - label: "Awards"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.name.en}}"
+            fields:
+              - label: "Image"
+                name: "image"
+                widget: "image"
+  
+              - label: "Name"
+                name: "name"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "French", name: "fr", widget: "string" }
+  
+              - label: "Alt Text"
+                name: "alt"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "French", name: "fr", widget: "string" }
+                              
+              - label: "Image"
+                name: "path"
+                widget: "image"
               
+              - label: "Preview"
+                name: "preview"
+                widget: "image"
+                required: false
+                
