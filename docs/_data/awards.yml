@@ -1,9 +1,8 @@
 items:
-  - name:
+  - image: /media/awards_energia.png
+    name:
       en: Energia
       fr: Energia
-    media:
-      path: /media/phenix-logo_2010-couleur_01d50.jpg
-      alt:
-        en: Energia
-        fr: Energia
+    alt:
+      en: Energia
+      fr: Energia
