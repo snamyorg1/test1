@@ -1,53 +1,53 @@
-backend:
-  name: github
-  repo: snamyorg1/test1
-  base_url: https://suresh-issue-82.dcycleproject.org
-  auth_endpoint: /auth/github/repo/69b186a00750ad49829f2f39
-media_folder: static/uploads
-public_folder: /uploads
-collections:
-  - name: blog
-    label: Blog
-    folder: content/blog
-    create: true
-    slug: '{{slug}}'
-    fields:
-      - label: Title
-        name: title
-        widget: string
-      - label: Date
-        name: date
-        widget: datetime
-      - label: Body
-        name: body
-        widget: markdown
-  - name: "awards"
-    label: "Awards"
-    files:
-      - file: "docs/_data/awards.yml"
-        label: "Awards List"
-        name: "awards_list"
-        fields:
-          - label: "Awards"
-            name: ""
-            widget: "list"
-            fields:
-              - label: "Name"
-                name: "name"
-                widget: "object"
-                fields:
-                  - { label: "English", name: "en", widget: "string" }
-                  - { label: "French", name: "fr", widget: "string" }
+# backend:
+#   name: github
+#   repo: snamyorg1/test1
+#   base_url: https://suresh-issue-82.dcycleproject.org
+#   auth_endpoint: /auth/github/repo/69b186a00750ad49829f2f39
+# media_folder: static/uploads
+# public_folder: /uploads
+# collections:
+#   - name: blog
+#     label: Blog
+#     folder: content/blog
+#     create: true
+#     slug: '{{slug}}'
+#     fields:
+#       - label: Title
+#         name: title
+#         widget: string
+#       - label: Date
+#         name: date
+#         widget: datetime
+#       - label: Body
+#         name: body
+#         widget: markdown
+#   - name: "awards"
+#     label: "Awards"
+#     files:
+#       - file: "docs/_data/awards.yml"
+#         label: "Awards List"
+#         name: "awards_list"
+#         fields:
+#           - label: "Awards"
+#             name: ""
+#             widget: "list"
+#             fields:
+#               - label: "Name"
+#                 name: "name"
+#                 widget: "object"
+#                 fields:
+#                   - { label: "English", name: "en", widget: "string" }
+#                   - { label: "French", name: "fr", widget: "string" }
 
-              - label: "Media"
-                name: "media"
-                widget: "object"
-                fields:
-                  - { label: "Image", name: "path", widget: "image" }
+#               - label: "Media"
+#                 name: "media"
+#                 widget: "object"
+#                 fields:
+#                   - { label: "Image", name: "path", widget: "image" }
 
-                  - label: "Alt Text"
-                    name: "alt"
-                    widget: "object"
-                    fields:
-                      - { label: "English", name: "en", widget: "string" }
-                      - { label: "French", name: "fr", widget: "string" }
+#                   - label: "Alt Text"
+#                     name: "alt"
+#                     widget: "object"
+#                     fields:
+#                       - { label: "English", name: "en", widget: "string" }
+#                       - { label: "French", name: "fr", widget: "string" }
