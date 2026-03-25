@@ -156,7 +156,6 @@ collections:
         - label: "Awards"
           name: "items"
           widget: "list"
-          summary: "{{fields.name.en}}"
           fields:
             - label: "Name"
               name: "name"
@@ -170,7 +169,6 @@ collections:
               widget: "object"
               fields:
                 - { label: "Image", name: "path", widget: "image" }
-
                 - label: "Alt Text"
                   name: "alt"
                   widget: "object"
