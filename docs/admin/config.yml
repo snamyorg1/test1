@@ -60,6 +60,7 @@ slug:
 
 backend:
   name: github
+  branch: main
   repo: snamyorg1/test1
   base_url: https://suresh-issue-82.dcycleproject.org
   auth_endpoint: /auth/github/repo/69b6cfce3d9141c0c4f7792a
